@@ -9,3 +9,12 @@ While standard CI/CD pipelines and Dockerization ensure environmental reproducib
     Traceability & Reconciliation: The framework implements a pre-export result-receipting protocol. This ensures absolute deterministic reconciliation between the raw execution logs, the generated safety reports, and the final visualization dashboard, providing the quantitative proof required by certification auditors.
 
 By decoupling the Visibility Layer (Dashboards) from the Integrity Layer (Execution Control), this framework transitions from a research tool to a robust evidentiary engine for SIL-3/4 and DAL-A hardware qualification.
+Title: Reproducible FPGA Fault Injection Framework
+
+Quick Start: (Docker commands)
+
+The Admissibility Boundary: (Paste the text above here)
+
+Architecture Diagram: (Showing how Hash/Digest are stored)
+
+Benchmarks: (Link to your Dashboard)
