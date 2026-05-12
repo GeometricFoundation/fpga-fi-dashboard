@@ -1,0 +1,42 @@
+{
+  "receipt_metadata": {
+    "receipt_id": "EAB-2026-CERT-00412",
+    "timestamp": "2026-05-12T23:15:00Z",
+    "framework_version": "v1.2.4-stable",
+    "admissibility_standard": "ISO-26262-8:2018-Compliance"
+  },
+  "provenance_layer": {
+    "description": "Cryptographic anchors linking source to hardware instance",
+    "artifact_hashes": {
+      "rtl_source_sha256": "7f83b123152c4a92a82987a321528c12a7891c12a789123c12a789123c456789",
+      "bitstream_sha256": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2"
+    },
+    "environment_attestation": {
+      "docker_image_digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "toolchain_identity": "Vivado_ML_Enterprise_2023.2_Build_4029153",
+      "host_os": "Ubuntu-22.04.3-LTS-Safety-Hardened"
+    }
+  },
+  "execution_campaign": {
+    "description": "Deterministic fault injection parameters",
+    "target_module": "RISC-V_PLIC_Interrupt_Controller_v1.2",
+    "fault_model": "Single_Event_Upset (SEU)",
+    "injection_strategy": "Exhaustive_Coordinate_Space",
+    "deterministic_seed": 42109,
+    "total_injection_points": 10000
+  },
+  "safety_benchmark_results": {
+    "faults_injected": 10000,
+    "faults_detected": 9850,
+    "silent_data_corruption_sdc": 150,
+    "diagnostic_coverage_dc": "98.5%",
+    "asil_compliance_target": "ASIL-B",
+    "status": "PASSED"
+  },
+  "integrity_seal": {
+    "description": "Digital signature ensuring the evidence has not been tampered with post-execution",
+    "signature_algorithm": "ECDSA-SHA256",
+    "public_key_fingerprint": "EB:45:12:9A:88:CC:12:AB:09:88:77:11:00:FF:AA:BB",
+    "signed_hash": "MEYCIQC1r8aB2G6H8S9P0L1K2J3H4G5F6E7D8C9B0A1M2N3B4V5C6X7Z8L9K0J1H2G3F4E5D6C7B8A9"
+  }
+}
